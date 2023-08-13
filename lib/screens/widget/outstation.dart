@@ -53,6 +53,7 @@ class _OutstationState extends State<Outstation> {
                     height: 25,
                   ),
                   Row(
+                    // mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
                       GestureDetector(
                         onTap: () => setState(() {
@@ -60,7 +61,7 @@ class _OutstationState extends State<Outstation> {
                         }),
                         child: Container(
                           padding: EdgeInsets.symmetric(
-                              horizontal: 30, vertical: 15.0),
+                              horizontal: 10, vertical: 15.0),
                           decoration: BoxDecoration(
                               borderRadius: BorderRadius.circular(15),
                               border: !isOneWay ? Border.all() : null,
@@ -70,9 +71,9 @@ class _OutstationState extends State<Outstation> {
                           child: Row(
                             children: [
                               if (isOneWay) Icon(Icons.check),
-                              SizedBox(
-                                width: 10,
-                              ),
+                              // SizedBox(
+                              //   width: 10,
+                              // ),
                               Text(
                                 "One-way",
                                 style: TextStyle(
@@ -89,7 +90,7 @@ class _OutstationState extends State<Outstation> {
                         }),
                         child: Container(
                           padding: EdgeInsets.symmetric(
-                              horizontal: 30, vertical: 15.0),
+                              horizontal: 10, vertical: 15.0),
                           decoration: BoxDecoration(
                               borderRadius: BorderRadius.circular(15),
                               border: isOneWay ? Border.all() : null,

@@ -371,6 +371,7 @@ class _DetailsScreenState extends State<DetailsScreen> {
               Padding(
                 padding: const EdgeInsets.all(10.0),
                 child: Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
                     GestureDetector(
                       onTap: () => setState(() {
@@ -378,7 +379,7 @@ class _DetailsScreenState extends State<DetailsScreen> {
                       }),
                       child: Container(
                         padding: const EdgeInsets.symmetric(
-                            horizontal: 30, vertical: 15.0),
+                            horizontal: 10, vertical: 15.0),
                         decoration: BoxDecoration(
                             borderRadius: BorderRadius.circular(15),
                             border: !isOneWay ? Border.all() : null,
@@ -400,14 +401,13 @@ class _DetailsScreenState extends State<DetailsScreen> {
                         ),
                       ),
                     ),
-                    const SizedBox(width: 20.0),
                     GestureDetector(
                       onTap: () => setState(() {
                         isOneWay = false;
                       }),
                       child: Container(
                         padding: const EdgeInsets.symmetric(
-                            horizontal: 30, vertical: 15.0),
+                            horizontal: 10, vertical: 15.0),
                         decoration: BoxDecoration(
                             borderRadius: BorderRadius.circular(15),
                             border: isOneWay ? Border.all() : null,
@@ -448,6 +448,9 @@ class _DetailsScreenState extends State<DetailsScreen> {
                     style: TextStyle(fontSize: 25, fontWeight: FontWeight.bold),
                   ),
                 ),
+              ),
+              const SizedBox(
+                height: 10,
               ),
             ],
           ),

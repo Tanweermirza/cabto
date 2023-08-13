@@ -118,6 +118,9 @@ class _HomeScreenState extends State<HomeScreen> {
                 child: const Text('Next'),
               ),
             ),
+            const SizedBox(
+              height: 10,
+            ),
           ],
         ),
       ),
